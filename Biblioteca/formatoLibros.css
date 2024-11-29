@@ -1,0 +1,106 @@
+/*LMSGI02 - Tarea evolutiva 02
+David Pozuelo Garcia
+29/11/2024
+
+Para esta tipología de página se ha crado un estilo completo*/
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+/*Fondo general del body*/
+body {
+	background-image: url(../Index/library1.PNG);
+	background-size: cover;
+	font-family: 'Atma';
+	margin: 0;
+	padding: 0;
+	color: azure;
+}
+
+/*Estilo header*/
+header {
+	text-align: center;
+	font-weight: 600;
+	background-color: black;
+	position: fixed;
+	top:0;
+	height: 140px;
+	width: 100%;
+	z-index: 1000;
+}
+
+/*Estilo del main*/
+main{
+	position: relative;
+	margin-top: 140px;
+	display: flex;
+	flex-direction: row;
+	z-index: 0;
+	box-sizing: border-box;
+}
+
+section article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+}
+
+table{
+	border: solid 1px azure;
+	border-spacing: 4px;
+
+}
+
+
+td{	border: solid 1px azure;
+	width: 250px;
+}
+
+aside{
+	position: relative;
+	left:0;
+	width:10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	color: azure;
+	z-index: 1000;
+	box-sizing: border-box;
+}
+
+footer p, footer p a:link, footer p a:visited, footer p a:active {
+	font-size: 12px;
+}
+
+footer p a:hover {
+	font-size: 16px;
+}
+
+p a:link, p a:visited, p a:active, td a:link, td a:visited, td a:active{
+	font-family: 'Atma';
+	color: azure;
+	text-decoration: none;
+	font-size: medium;
+	font-weight: 500;
+}
+
+p a:hover, td a:hover{
+	font-family: 'Atma';
+	color: azure;
+	text-decoration: none;
+	font-size: large;
+	font-weight: 500;
+}
+
+.container{
+	width: 90%;
+}

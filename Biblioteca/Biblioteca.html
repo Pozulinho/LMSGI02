@@ -1,0 +1,87 @@
+<!--LMSGI02 - Tarea evolutiva 02
+David Pozuelo Garcia
+29/11/2024
+URL: http://pozulinho.github.io/LMSGI02/index.html--> 
+
+<!DOCTYPE html>
+<html lang="es">
+    <!--CABECERA-->
+    <head>
+        <title>Biblioteca fantástica - Biblioteca</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Biblioteca principal">
+        <meta name="keywords" content="fantasia, html, html5, biblioteca">
+        <!--En este html realizamos el formateo de la página mediante dos ficheros externos, 
+        uno con los formatos globales de la página y otro con los particulares de Biblioteca.
+        Se utiliza también algún style en la hoja-->
+        <link rel="stylesheet" href="../Index/formatoGlobal.css">
+        <link rel="stylesheet" href="./formatoBlibioteca.css">
+
+    </head>
+    <!--CUERPO-->
+    <body>
+        <!--Header-->
+        <header>
+            <h1>BIBLIOTECA FANTASTICA</h1>
+            <h2>AUTORES</h2>
+        </header>
+        <!--Main-->
+        <main>
+            <nav>
+                <p><a href="../index.html">Inicio</a></p>
+                <p><a href="../Noticias/Noticias.html">Noticias</a></p>
+                <p><a href="../Formulario/Formulario.html">Formulario</a></p>
+            </nav>
+            <section>
+                <article class="presentacion">
+                    <p>Encuentra tu autor de novela fantástica favorito y comprueba todos sus libros</p>
+                </article>
+                <section>
+                    <!--Cada article lleva a la página web de cada autor. El link se encuentra únicamente en la imagen-->
+                    <article>
+                        <a href="./Autor 1/Autor_1.html">
+                            <img src = "./Imagenes/anillo.jpg" alt = "Tolkien" class ="imagen">
+                        </a>
+                        <h2 style = "text-align: center;">J.R.R. Tolkien</h2>
+                    </article>
+                    <article>
+                        <a href="./Autor 2/Autor_2.html">
+                            <img src = "./Imagenes/Dragonlance.jpg" width="200" alt = "Dragonlance" class ="imagen">
+                        </a>
+                        <h2 style = "text-align: center;">Saga Dragonlance</h2>
+                    </article>
+                    <article>
+                        <a href="./Autor 2/Autor_2.html">
+                            <img src = "./Imagenes/harry_potter.jpg" width="500" alt = "J.K. Rowling" class ="imagen">
+                        </a>
+                        <h2 style = "text-align: center;">J.K. Rowling</h2>
+                    </article>
+                    <article>
+                        <a href="./Autor 2/Autor_2.html">
+                            <img src = "./Imagenes/Rothfuss.webp" width="500" alt = "Rothfuss" class ="imagen">
+                        </a>
+                        <h2 style = "text-align: center;">Patrick Rothfuss</h2>
+                    </article>
+                    <article>
+                        <a href="./Autor 2/Autor_2.html">
+                            <img src = "./Imagenes/juego_de_tronos.webp" width="500" alt = "R.R. Martin" class ="imagen">
+                        </a>
+                        <h2 style = "text-align: center;">George R.R. Martin</h2>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <p>Fuente de las imagenes (sin regalías): <a href="https://pixabay.com/es/" target="_blank">https://pixabay.com/es/</a></p>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Esta obra</span> 
+                by <span property="cc:attributionName">David Pozuelo</span> está licenciado bajo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" 
+                target="_blank" rel="license noopener noreferrer" style="display:inline-block;" >CC BY-NC-SA 4.0<img style="height:22px!important; margin-left:3px; vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important; 
+                margin-left:3px; vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+                alt=""><img style="height:22px!important; margin-left:3px; vertical-align:text-bottom;" 
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important; margin-left:3px; 
+                vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
+            </p>
+        </footer>
+    </body>
+</html>

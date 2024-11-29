@@ -1,0 +1,31 @@
+/*LMSGI02 - Tarea evolutiva 02
+David Pozuelo Garcia
+29/11/2024
+
+Estilos de documento HTML Autor_* */
+
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+main section{
+	display: flex;
+	flex-direction: column;
+}
+
+main section article{
+	position: relative;
+	border: 1px solid azure;
+	justify-content: space-around;
+	border-radius: 5px;
+	width: 90%;	
+	padding: 2%;
+	margin: 1%;
+}
+
+p{
+	font-size: x-large;
+}
+
+
+.medium{
+	font-size: medium;
+}

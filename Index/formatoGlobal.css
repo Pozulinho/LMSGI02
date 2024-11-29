@@ -1,0 +1,142 @@
+/*LMSGI02 - Tarea evolutiva 01
+David Pozuelo Garcia
+29/11/2024
+
+Estilos globales y comunes a todas las páginas web*/
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+/*Fondo general del body
+Damos al conjunto de la página un fondo común, una fuente comun y formato de altura para cada una de las partes identificadas en el grid*/
+body {
+	background-image: url(library1.PNG);
+	background-size: cover;
+	font-family: 'Atma';
+	min-height: 100vh;
+	min-width: 100vh;
+	margin: 0;
+	padding: 0;
+	grid-template-areas: "header"
+						"main"
+						"footer";
+	grid-template-rows: 140px 1fr	100px;
+	display: grid;
+	color: azure;
+}
+
+/*Estilo header*/
+header {
+	grid-area: header;
+	text-align: center;
+	font-weight: 600;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+/*Estilo del main
+las posiciones dentro del main (nav y section) se organizan en flex y row*/
+main{
+	grid-area: main;
+	display: flex;
+	flex-direction: row;
+	z-index: 0;
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+/*El Nav ocupará el 10% y tendrá la altura del main, y estará separado un 1% de la izquierda */
+nav {
+	border: 1px solid;
+	display: flex;
+	flex-direction: column;
+	text-align:center;
+	align-items: center;
+	justify-content: center;	
+	padding: 20px;
+	position: absolute;
+	margin-left: 1%;
+	width: 10%;
+	height: 100%;
+	box-sizing: border-box;
+
+}
+
+main section{
+	margin-left: 12%;
+	width: 90%;
+	justify-content: space-around;
+}
+
+main section section{
+	margin-left: 0;
+	width: 100%;
+}
+
+footer {
+	grid-area: footer;
+	text-align: center;
+	color: azure;
+	z-index: 1000;
+
+}
+
+/*Distintos formatos para los links, en general se mantiene normal salvo que se pase el ratón por encima, que se agranda, tanto p como img*/
+footer p, footer p a:link, footer p a:visited, footer p a:active {
+	font-size: small;
+}
+
+footer p a:hover {
+	font-size: medium;
+}
+
+p a:link, p a:visited, p a:active{
+	font-family: 'Atma';
+	color: azure;
+	text-decoration: none;
+	font-size: large;
+	font-weight: 500;
+}
+
+p a:hover{
+	font-family: 'Atma';
+	color: azure;
+	text-decoration: none;
+	font-size: x-large;
+	font-weight: 500;
+}
+
+/*Cuando el cursor pasa por la imagen con link, está crece a 1,1*/
+a img:link, a img:visited, a img:active{
+	transform: scale(1);
+}
+
+a img:hover{
+	transform: scale(1.1);
+}
+
+/*Ordenamiento de los contenedores*/
+.enlinea{
+	display: flex;
+	flex-direction: row;
+}
+
+.encolumna{
+	display: flex;
+	flex-direction: column;
+
+}
+
+/*Formato general de la parte de presentación*/
+.presentacion{
+	width: 85%;
+	padding-left: 5%;
+	padding-right: 5%;
+	border: none;
+	font-size:x-large;
+	text-align: center;
+	color: azure;
+}
+
+

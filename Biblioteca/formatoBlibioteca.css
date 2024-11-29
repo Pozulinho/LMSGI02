@@ -1,0 +1,32 @@
+/*LMSGI02 - Tarea evolutiva 02
+David Pozuelo Garcia
+29/11/2024
+
+Estilos de documento HTML Biblioteca*/
+
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+main section{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+main section article{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid azure;
+	border-radius: 10px;
+	justify-content: space-around;
+	width: 28%;	
+	margin: 1%;
+	padding: 1%;
+	text-align: center;
+}
+
+/*Formateamos las imagenes para que aparezcan en redondel, de la misma altura y anchura*/
+.imagen {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60%;
+   }
+
